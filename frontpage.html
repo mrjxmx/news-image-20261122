@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Image — Sunday 22 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    background: #f7f2e7;
+    color: #16130f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 16px 36px 8px 36px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .sans { font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+
+  /* ---------- furniture ---------- */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 3px solid #16130f; border-bottom: 1px solid #16130f;
+    padding: 3px 2px 4px 2px;
+    font-size: 13px; letter-spacing: 2.4px; text-transform: uppercase;
+  }
+  .masthead {
+    text-align: center;
+    font-size: 54px; font-weight: 900; letter-spacing: 0.4px;
+    line-height: 1.04; padding: 6px 0 5px 0;
+    border-bottom: 3px solid #16130f;
+  }
+  .datebar {
+    background: #16130f; color: #f7f2e7;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 5px 14px; margin-top: 6px;
+  }
+  .datebar .date { font-size: 22px; font-weight: 900; letter-spacing: 2.6px; }
+  .datebar .tag { font-size: 12.5px; letter-spacing: 2px; text-transform: uppercase; }
+
+  /* ---------- lead ---------- */
+  .kicker {
+    margin-top: 7px; text-align: center;
+    font-size: 14.5px; letter-spacing: 3.6px; text-transform: uppercase; color: #8c1d18;
+    font-weight: bold;
+  }
+  h1.lead {
+    text-align: center; font-size: 44px; font-weight: 900; line-height: 1.03;
+    margin: 3px 0 5px 0; letter-spacing: 0.2px;
+  }
+  .deck {
+    text-align: center; font-size: 17px; font-style: italic; line-height: 1.26;
+    padding: 0 40px 6px 40px; border-bottom: 1px solid #16130f;
+  }
+  .leadrow { display: flex; gap: 22px; margin-top: 7px; }
+  .leadfig { flex: 0 0 430px; }
+  .leadfig .cap {
+    font-size: 12.4px; line-height: 1.28; margin-top: 2px; color: #35322a;
+    border-top: 1px solid #9a937e; padding-top: 2px;
+  }
+  .leadtext { flex: 1; font-size: 14.4px; line-height: 1.31; text-align: justify; }
+  .leadtext p { margin-bottom: 6px; }
+  .leadtext .first::first-letter {
+    font-size: 37px; font-weight: 900; float: left; line-height: 0.85;
+    padding: 2px 6px 0 0;
+  }
+
+  /* ---------- middle row ---------- */
+  .rule { border-top: 3px solid #16130f; margin: 7px 0 7px 0; }
+  .cols3 { display: flex; gap: 22px; }
+  .col { flex: 1; }
+  .col + .col { border-left: 1px solid #a49d88; padding-left: 22px; }
+  .col .dateline {
+    font-size: 12px; letter-spacing: 2.4px; text-transform: uppercase;
+    color: #8c1d18; font-weight: bold; margin-bottom: 2px;
+  }
+  .col h2 { font-size: 20px; font-weight: 900; line-height: 1.12; margin-bottom: 4px; }
+  .col p { font-size: 13.6px; line-height: 1.32; text-align: justify; }
+
+  /* ---------- bottom row ---------- */
+  .bottomrow {
+    display: flex; gap: 22px; margin-top: 8px;
+    border-top: 3px solid #16130f; padding-top: 8px;
+  }
+  .florida { flex: 1.5; }
+  .florida h2 { font-size: 21px; font-weight: 900; line-height: 1.1; margin-bottom: 4px; }
+  .florida p { font-size: 14px; line-height: 1.33; text-align: justify; }
+  .numbox {
+    flex: 1.1; background: #16130f; color: #f7f2e7; padding: 8px 13px 6px 13px;
+  }
+  .numbox .ntitle {
+    font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase;
+    text-align: center; margin-bottom: 5px; color: #e8ddc0;
+  }
+  .numbox .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; }
+  .num .big { font-size: 21px; font-weight: 900; line-height: 1; }
+  .num .lbl { font-size: 11.3px; line-height: 1.24; margin-top: 3px; color: #d9d2bd; }
+  .briefs { flex: 1; border-left: 1px solid #a49d88; padding-left: 22px; }
+  .briefs h3 {
+    font-size: 13.5px; letter-spacing: 3px; text-transform: uppercase;
+    border-bottom: 2px solid #16130f; padding-bottom: 2px; margin-bottom: 4px;
+  }
+  .briefs p { font-size: 12.4px; line-height: 1.28; margin-bottom: 3px; }
+  .briefs b { text-transform: uppercase; font-size: 11.5px; letter-spacing: 0.6px; }
+
+  .footer {
+    border-top: 3px solid #16130f; margin-top: auto; padding-top: 3px;
+    display: flex; justify-content: space-between;
+    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #3a382f;
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar sans">
+    <span>Vol. I &mdash; No. 22</span>
+    <span>One image &middot; All the news</span>
+    <span>Price: one look</span>
+  </div>
+
+  <div class="masthead">The World in One Image</div>
+
+  <div class="datebar">
+    <span class="date">SUNDAY 22 NOVEMBER 2026</span>
+    <span class="tag sans">The day&rsquo;s news, drawn as one front page</span>
+  </div>
+
+  <div class="kicker sans">Missiles over Riyadh &middot; A rift in North America</div>
+  <h1 class="lead">HOUTHIS STRIKE RIYADH</h1>
+  <div class="deck">Three ballistic missiles are intercepted over the Saudi capital &mdash; the second attack
+    on Riyadh in three days &mdash; as the war in Yemen spills across the Red Sea and the
+    Houthis warn airlines and ports to stay away</div>
+
+  <div class="leadrow">
+    <div class="leadfig">
+      <svg width="430" height="200" viewBox="0 0 430 218" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="428" height="216" fill="#efe8d3" stroke="#16130f" stroke-width="2"/>
+        <!-- Red Sea (west) -->
+        <path d="M14 14 L66 14 L52 204 L14 204 Z" fill="#b8cdd6"/>
+        <text x="20" y="118" font-family="Arial, sans-serif" font-size="10.5" fill="#2e5566"
+              font-weight="bold" transform="rotate(-90 26 118)">RED SEA</text>
+        <!-- Saudi Arabia -->
+        <path d="M66 14 L414 14 L414 96 L372 150 L330 196 L238 204 L148 196 L96 172 L66 118 Z" fill="#f3ecd9"/>
+        <!-- Yemen (south-west) -->
+        <path d="M66 118 L96 172 L148 196 L238 204 L246 190 L180 168 L120 150 L70 138 Z" fill="#ddd2ae"/>
+        <!-- borders -->
+        <path d="M66 118 L96 172 L148 196" fill="none" stroke="#16130f" stroke-width="1.6"/>
+        <path d="M70 138 L120 150 L180 168 L246 190" fill="none" stroke="#16130f" stroke-width="1.6" stroke-dasharray="6 4"/>
+        <text x="215" y="128" font-family="Arial, sans-serif" font-size="17" font-weight="bold" letter-spacing="2">SAUDI ARABIA</text>
+        <text x="140" y="208" font-family="Arial, sans-serif" font-size="13" font-weight="bold" letter-spacing="1.5">YEMEN</text>
+        <!-- Jeddah -->
+        <circle cx="92" cy="104" r="4" fill="#16130f"/>
+        <text x="100" y="99" font-family="Georgia, serif" font-size="13">Jeddah</text>
+        <!-- Hodeida -->
+        <circle cx="88" cy="162" r="4" fill="#16130f"/>
+        <path d="M92 166 L140 190" fill="none" stroke="#16130f" stroke-width="1" stroke-dasharray="2 3"/>
+        <text x="144" y="194" font-family="Georgia, serif" font-size="13">Hodeida</text>
+        <!-- Riyadh -->
+        <circle cx="330" cy="66" r="5" fill="#16130f"/>
+        <text x="300" y="52" font-family="Georgia, serif" font-size="15" font-weight="bold">Riyadh</text>
+        <!-- impact burst over Riyadh -->
+        <g transform="translate(330,66)">
+          <path d="M0 -16 L3.6 -5.6 L14.4 -7.2 L6.4 1.6 L11.2 11.2 L2.4 7.2 L0 16.8 L-2.4 7.2 L-11.2 11.2 L-6.4 1.6 L-14.4 -7.2 L-3.6 -5.6 Z"
+                fill="#c8401f" stroke="#7d1408" stroke-width="1.4"/>
+          <circle r="3.6" fill="#f7f2e7"/>
+        </g>
+        <!-- missile arc Hodeida -> Riyadh -->
+        <path d="M88 158 Q160 70 318 62" fill="none" stroke="#8c1d18" stroke-width="3.2" stroke-dasharray="2 7" stroke-linecap="round"/>
+        <text x="120" y="36" font-family="Arial, sans-serif" font-size="11.5" fill="#8c1d18" font-weight="bold">3 MISSILES</text>
+        <text x="120" y="50" font-family="Arial, sans-serif" font-size="11.5" fill="#8c1d18" font-weight="bold">INTERCEPTED</text>
+        <!-- PIF tower note -->
+        <text x="245" y="170" font-family="Georgia, serif" font-size="12" font-style="italic">Thu.: tower in the financial</text>
+        <text x="245" y="184" font-family="Georgia, serif" font-size="12" font-style="italic">district hit; fund HQ damaged</text>
+      </svg>
+      <div class="cap">The fighting, drawn schematically &mdash; not to scale. The four-year truce collapsed in July.</div>
+    </div>
+    <div class="leadtext">
+      <p class="first">Yemen&rsquo;s Houthis launched strikes on the Saudi capital on Saturday, hours after
+        vowing revenge for a Saudi-led coalition &ldquo;special operation&rdquo; against the Red Sea port
+        of Hodeida and other targets on Friday. An alert warned Riyadh was under a hostile
+        aerial threat; two explosions were heard in the city.</p>
+      <p>The coalition said it intercepted and destroyed three Houthi ballistic missiles headed
+        for the capital, and two more over the Jizan region. It was the second Houthi attack on
+        Riyadh in three days: on Thursday a strike damaged the Public Investment Fund tower,
+        the tallest skyscraper in the city.</p>
+      <p>The Houthis said coalition strikes had killed 41 people in the previous 24 hours, and
+        warned airlines that Saudi airspace was &ldquo;unsafe&rdquo;, threatening Jeddah and every Red
+        Sea port, the financial district and a power station at Al-Shuqaiq. Neither side&rsquo;s
+        casualty claims could be independently verified.</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="cols3">
+    <div class="col">
+      <div class="dateline sans">Washington &middot; Halifax</div>
+      <h2>PENTAGON CURBS DEFENCE TIES WITH CANADA</h2>
+      <p>Defence Secretary Pete Hegseth has imposed new limits on military cooperation with
+        Canada in a classified memo, the Washington Post reported on Friday; the Pentagon
+        confirmed the move on Saturday. Intelligence sharing, NORAD and NATO work are
+        untouched, officials say &mdash; but senators in Halifax called it a &ldquo;slap in the
+        face&rdquo; to America&rsquo;s oldest ally.</p>
+    </div>
+    <div class="col">
+      <div class="dateline sans">New York</div>
+      <h2>TRUMP VOWS 10% CAP ON CREDIT-CARD RATES</h2>
+      <p>President Trump said on Saturday he will work with the incoming Democratic Congress
+        to cap credit-card interest at 10%, reviving a 2024 campaign promise. The median rate
+        is about 22.2%; researchers say a cap would save Americans roughly $100bn a year in
+        interest. Senator Warren answered: &ldquo;Let&rsquo;s cap credit card interest rates.&rdquo;</p>
+    </div>
+    <div class="col">
+      <div class="dateline sans">The Hague</div>
+      <h2>ROHINGYA HAIL GENOCIDE VERDICT; MYANMAR SCOFFS</h2>
+      <p>Three days after the world court ruled 9&ndash;6 that Myanmar committed genocide against
+        the Rohingya &mdash; the first time a state has been found guilty of the crime &mdash;
+        survivors celebrated in the camps while the junta dismissed the verdict and China
+        backed its objection. The court ordered reparations and a plan within two years.</p>
+    </div>
+  </div>
+
+  <div class="bottomrow">
+    <div class="florida">
+      <h2>FLORIDA DROWNS IN ITS WETTEST NOVEMBER EVER</h2>
+      <p>Melbourne has had 22.59 inches of rain since 1 November &mdash; more than double its
+        old November record &mdash; and the St Johns River has passed its 1953 crest. The
+        National Guard was called out on Thursday as a second storm in three weeks
+        flooded the Space Coast.</p>
+      <svg width="400" height="62" viewBox="0 0 400 62" xmlns="http://www.w3.org/2000/svg">
+        <!-- Melbourne rain, Nov 1-19, inches -->
+        <text x="2" y="11" font-family="Arial, sans-serif" font-size="11" font-weight="bold">MELBOURNE RAIN, NOVEMBER (INCHES)</text>
+        <rect x="2" y="19" width="318" height="12" fill="#8c1d18"/>
+        <text x="326" y="29" font-family="Arial, sans-serif" font-size="12" font-weight="bold">22.59 &mdash; Nov 2026</text>
+        <rect x="2" y="35" width="137" height="12" fill="#a49d88"/>
+        <text x="145" y="45" font-family="Arial, sans-serif" font-size="12">9.72 &mdash; old record, 1963</text>
+        <rect x="2" y="51" width="36" height="11" fill="#d9d2bd"/>
+        <text x="44" y="61" font-family="Arial, sans-serif" font-size="12">2.53 &mdash; normal November</text>
+      </svg>
+    </div>
+    <div class="numbox">
+      <div class="ntitle sans">The day in numbers</div>
+      <div class="grid">
+        <div class="num"><div class="big">6.7</div><div class="lbl">magnitude of the quake that shook Peru at 00:09 GMT today; no deaths</div></div>
+        <div class="num"><div class="big">3</div><div class="lbl">Houthi missiles intercepted over Riyadh on Saturday</div></div>
+        <div class="num"><div class="big">22.59&Prime;</div><div class="lbl">rain in Melbourne, Florida, so far this November</div></div>
+        <div class="num"><div class="big">9&ndash;6</div><div class="lbl">judges&rsquo; split in the world court&rsquo;s Myanmar genocide verdict</div></div>
+      </div>
+    </div>
+    <div class="briefs">
+      <h3 class="sans">Around the world</h3>
+      <p><b>Jun&iacute;n, Peru</b> &mdash; A 6.7 quake struck the Andes at 19:09 local time; felt in Lima, minor damage, no fatalities.</p>
+      <p><b>Warsaw</b> &mdash; Poland says the Russian missile that landed on its soil was a provocation; NATO calls it a violation.</p>
+      <p><b>Pyongyang</b> &mdash; Kim Jong Un tours factory sites after what state media called a &ldquo;Trump snub&rdquo;.</p>
+      <p><b>New Delhi</b> &mdash; Opposition protesters target Meta offices; 11 die from tainted alcohol in Manipur.</p>
+    </div>
+  </div>
+
+  <div class="footer sans">
+    <span>Drawn in code &middot; No photographs</span>
+    <span>Wire reports: AFP &middot; AP &middot; Reuters &middot; NOAA</span>
+    <span>Tomorrow: another day, another image</span>
+  </div>
+
+</body>
+</html>
